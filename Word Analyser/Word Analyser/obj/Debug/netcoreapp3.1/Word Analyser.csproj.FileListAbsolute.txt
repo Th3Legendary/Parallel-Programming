@@ -1,0 +1,15 @@
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\bin\Debug\netcoreapp3.1\Word Analyser.exe
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\bin\Debug\netcoreapp3.1\Word Analyser.deps.json
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\bin\Debug\netcoreapp3.1\Word Analyser.runtimeconfig.json
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\bin\Debug\netcoreapp3.1\Word Analyser.runtimeconfig.dev.json
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\bin\Debug\netcoreapp3.1\Word Analyser.dll
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\bin\Debug\netcoreapp3.1\Word Analyser.pdb
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\obj\Debug\netcoreapp3.1\Word Analyser.csprojAssemblyReference.cache
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\obj\Debug\netcoreapp3.1\Word Analyser.AssemblyInfoInputs.cache
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\obj\Debug\netcoreapp3.1\Word Analyser.AssemblyInfo.cs
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\obj\Debug\netcoreapp3.1\Word Analyser.csproj.CoreCompileInputs.cache
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\obj\Debug\netcoreapp3.1\Word Analyser.dll
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\obj\Debug\netcoreapp3.1\Word Analyser.pdb
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\obj\Debug\netcoreapp3.1\Word Analyser.genruntimeconfig.cache
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\obj\Debug\netcoreapp3.1\Word_Analyser.Properties.Resources.resources
+C:\Users\thele\Desktop\Parallel Programming\Word Analyser\Word Analyser\obj\Debug\netcoreapp3.1\Word Analyser.csproj.GenerateResource.cache
