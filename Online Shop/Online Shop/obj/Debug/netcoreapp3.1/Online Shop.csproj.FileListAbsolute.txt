@@ -1,0 +1,13 @@
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\Online Shop.exe
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\Online Shop.deps.json
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\Online Shop.runtimeconfig.json
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\Online Shop.runtimeconfig.dev.json
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\Online Shop.dll
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\bin\Debug\netcoreapp3.1\Online Shop.pdb
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.csprojAssemblyReference.cache
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.AssemblyInfoInputs.cache
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.AssemblyInfo.cs
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.csproj.CoreCompileInputs.cache
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.dll
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.pdb
+C:\Users\thele\Desktop\Parallel Programming\Online Shop\Online Shop\obj\Debug\netcoreapp3.1\Online Shop.genruntimeconfig.cache
