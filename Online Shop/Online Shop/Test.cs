@@ -23,6 +23,7 @@ namespace Online_Shop
         static void StartTest()
         {
             List<Thread> threads = new List<Thread>();
+
             for (int i = 0; i < suppliers; i++)
             {
                 Thread t = new Thread(SupplyWorker);
@@ -30,6 +31,7 @@ namespace Online_Shop
                 t.Start(threadName);
                 threads.Add(t);
             }
+
             for (int i = 0; i < buyers; i++)
             {
                 Thread t = new Thread(BuyWorker);
@@ -37,7 +39,9 @@ namespace Online_Shop
                 t.Start(threadName);
                 threads.Add(t);
             }
+
             foreach (var t in threads) t.Join();
+
             Console.WriteLine("Test Finished");
         }
         static void SupplyWorker(object obj)
@@ -62,7 +66,9 @@ namespace Online_Shop
         {
             string threadName = (string)obj;
             int itemsToBuy = rand.Next(1, shop.stock.Count);
+
             Console.WriteLine($"{threadName} will try to buy {itemsToBuy} items");
+
             while (itemsToBuy != 0)
             {
                 int amount = rand.Next(1, 20);
