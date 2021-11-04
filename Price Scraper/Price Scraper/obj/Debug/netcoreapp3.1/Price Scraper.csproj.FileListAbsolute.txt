@@ -1,0 +1,17 @@
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\bin\Debug\netcoreapp3.1\Price Scraper.exe
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\obj\Debug\netcoreapp3.1\Price Scraper.csprojAssemblyReference.cache
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\obj\Debug\netcoreapp3.1\Price Scraper.AssemblyInfoInputs.cache
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\obj\Debug\netcoreapp3.1\Price Scraper.AssemblyInfo.cs
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\bin\Debug\netcoreapp3.1\Price Scraper.deps.json
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\bin\Debug\netcoreapp3.1\Price Scraper.runtimeconfig.json
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\bin\Debug\netcoreapp3.1\Price Scraper.runtimeconfig.dev.json
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\bin\Debug\netcoreapp3.1\Price Scraper.dll
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\bin\Debug\netcoreapp3.1\Price Scraper.pdb
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\bin\Debug\netcoreapp3.1\HtmlAgilityPack.dll
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\obj\Debug\netcoreapp3.1\Price Scraper.csproj.CopyComplete
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\obj\Debug\netcoreapp3.1\Price Scraper.dll
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\obj\Debug\netcoreapp3.1\Price Scraper.pdb
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\obj\Debug\netcoreapp3.1\Price Scraper.genruntimeconfig.cache
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\bin\Debug\netcoreapp3.1\Fizzler.dll
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\bin\Debug\netcoreapp3.1\Fizzler.Systems.HtmlAgilityPack.dll
+C:\Users\thele\Desktop\Parallel Programming\Price Scraper\Price Scraper\obj\Debug\netcoreapp3.1\Price Scraper.csproj.CoreCompileInputs.cache
