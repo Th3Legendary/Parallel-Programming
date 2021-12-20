@@ -52,42 +52,40 @@ namespace ElevatorSim
             } while (chosenFloor == floor);
             return chosenFloor;
         }
-        private void decisionsHandler()
+        private void DecisionsHandler()
         {
             while (status == AgentStatus.AwaitingElevator)
             {
+                area51.elevator.elevatorQueue.WaitOne();
                 if (area51.elevator.CurrentFloor == currentFloor && area51.elevator.openDoor)
                 {
                     status = AgentStatus.InElevator;
                     Floors newFloor = GetRandomFloor(currentFloor);
                     Console.WriteLine($"{Name} entered the elevator and wants to go to the {area51.FloorEnumToStringConverter(newFloor)}.");
                     area51.elevator.SwitchFloors(newFloor);
-
+                    area51.elevator.elevatorQueue.Release();
                     while (status == AgentStatus.InElevator)
                     {
                         area51.elevator.isEmpty = false;
-                        if(area51.elevator.CurrentFloor == newFloor)
-                        {
+                        area51.elevator.elevatorQueue.WaitOne();
+                        if (area51.elevator.CurrentFloor == newFloor)
+                        {                         
                             if (!area51.elevator.Leave(this))
                             {
                                 newFloor = GetRandomFloor(area51.elevator.CurrentFloor);
                                 area51.elevator.SwitchFloors(newFloor);
                                 Console.WriteLine($"{Name} doesn't have the required security clearance for this floor so they have decided to go to the {area51.FloorEnumToStringConverter(newFloor)} instead.");
-                                //continue;
                             }
                             else
                             {
                                 status = AgentStatus.OutsideElevator;
                                 currentFloor = newFloor;
                                 Console.WriteLine($"{Name} has sufficient clearance and has left the elevator at the {area51.FloorEnumToStringConverter(currentFloor)}.");
-                                area51.elevator.semaphore.Release();
-                            }
-                            
+                                area51.elevator.agentQueue.Release();                                
+                            }                           
                         }
-                        Thread.Sleep(100);
                     }
                 }
-                Thread.Sleep(100);
             }
         }
 
@@ -95,7 +93,7 @@ namespace ElevatorSim
         {           
             bool atBase = true;
             currentFloor = Floors.Ground;
-            Console.WriteLine($"{Name} has entered Area 21 on the {area51.FloorEnumToStringConverter(currentFloor)}.");
+            Console.WriteLine($"{Name} has entered Area 51 on the {area51.FloorEnumToStringConverter(currentFloor)}.");
             Thread.Sleep(100);
 
             while (atBase & status == AgentStatus.OutsideElevator)
@@ -115,11 +113,11 @@ namespace ElevatorSim
                         Thread.Sleep(5000);
                         break;
                     case Activity.CallElevator:
-                        area51.elevator.semaphore.WaitOne();
+                        area51.elevator.agentQueue.WaitOne();
                         area51.elevator.CallElevator(currentFloor);
                         Console.WriteLine($"{Name} has called the elevator on the {area51.FloorEnumToStringConverter(currentFloor)}.");
                         status = AgentStatus.AwaitingElevator;
-                        decisionsHandler();
+                        DecisionsHandler();
                         break;
                     case Activity.Leave:
                         Console.WriteLine($"{this.Name} has decided to leave the base.");

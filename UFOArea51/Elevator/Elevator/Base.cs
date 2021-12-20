@@ -17,6 +17,7 @@ namespace ElevatorSim
         public void Open(int agentCount)
         {
             var elevatorThread = new Thread(elevator.StartElevator);
+            elevatorThread.Name = "elevator";
             agentsInside = true;
             elevatorThread.Start();
 

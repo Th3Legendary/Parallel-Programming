@@ -10,10 +10,12 @@ namespace ElevatorSim
         private int Speed { get; } = 1000; // 1000ms = 1s
         public Floors CurrentFloor = Floors.Ground;
         public Floors NextFloor = Floors.Ground;
-        public Semaphore semaphore = new Semaphore(1, 1);
+        public Semaphore agentQueue = new Semaphore(1, 1);
         private Base area51;
         public volatile bool openDoor = true;
         public bool isEmpty = true;
+        public ManualResetEvent mre = new ManualResetEvent(false);
+        public Semaphore elevatorQueue = new Semaphore(0, 1);
 
         public Elevator (Base b)
         {
@@ -24,6 +26,7 @@ namespace ElevatorSim
         {
             while (area51.agentsInside)
             {
+                elevatorQueue.WaitOne();
                 if (CurrentFloor != NextFloor)
                 {                   
                     openDoor = false;
@@ -41,6 +44,11 @@ namespace ElevatorSim
                     CurrentFloor = NextFloor;
                     openDoor = isEmpty;
                     Console.WriteLine($"The elevator has reached the {area51.FloorEnumToStringConverter(CurrentFloor)}.");
+                    elevatorQueue.Release();
+                }
+                else
+                {
+                    elevatorQueue.Release();
                 }
             }
         }
@@ -48,12 +56,14 @@ namespace ElevatorSim
         public void CallElevator(Floors floor) 
         {
             NextFloor = floor;
-            isEmpty = true;
+            isEmpty = true;       
+            elevatorQueue.Release();                     
         }
 
         public void SwitchFloors(Floors floor)
         {
             NextFloor = floor;
+            elevatorQueue.Release();
         }
 
         public bool Leave(Agent agent)
@@ -61,6 +71,7 @@ namespace ElevatorSim
             if ((int)agent.clearance >= (int)CurrentFloor) //checks agent clearance against floor requirement
             {
                 openDoor = true;
+                isEmpty = true;
             }
             return openDoor;
         }
